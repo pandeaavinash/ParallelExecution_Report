@@ -1,4 +1,4 @@
-package avinash.browser;
+package lambdatest.driver;
 
 
 
@@ -9,8 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import avinash.extentreport.ExtentReport;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import lambdatest.extentreport.ExtentReport;
 
 public class Browser
 {
