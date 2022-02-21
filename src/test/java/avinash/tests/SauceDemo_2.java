@@ -18,11 +18,11 @@ public class SauceDemo_2 extends Browser
 		driver = this.threadLocal.get();
 		driver.get("https://www.saucedemo.com/");
 		driver.findElement(By.id("user-name")).sendKeys("standard_user");
-		driver.findElement(By.id("password")).sendKeys("secret_saucee");
+		driver.findElement(By.id("password")).sendKeys("secret_sauce");
 		driver.findElement(By.id("login-button")).click();
 		
 		//driver.getTitle();
-		Assert.assertEquals(driver.getTitle(), "Swag Labss");
+		Assert.assertEquals(driver.getTitle(), "Swag Labs");
 	}
 	
 	@Test(description = "Login Sauce Demo Test & but failed to  verify page title")
@@ -36,6 +36,6 @@ public class SauceDemo_2 extends Browser
 		driver.findElement(By.id("login-button")).click();
 		
 		System.out.println(driver.getTitle());
-		Assert.assertEquals(driver.getTitle(), "Swag Labss");
+		Assert.assertEquals(driver.getTitle(), "Swag Labsss");
 	}
 }
